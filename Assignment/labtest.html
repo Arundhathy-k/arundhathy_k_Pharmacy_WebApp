@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Test Form</title>
+  <link rel="stylesheet" href="labtest.css">
+</head>
+<body>
+  <div class="container">
+
+      <div class="box-left">
+          <form>
+              <h2>1. Your Contact Details</h2>
+              <table>
+                  <tr>
+                      <td>
+                          <input type="text" name="fullName" id="fullName" placeholder="Full Name" />
+                      </td>
+                      <td>
+                          <input type="text" name="patientId" id="patientId" placeholder="Patient Id if exists" />
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td>
+                          <input type="tel" name="contactNumber" id="contactNumber" placeholder="Contact Number" />
+                      </td>
+                      <td>
+                          <input type="email" name="emailId" id="emailId" placeholder="Email Id" />
+                      </td>
+                  </tr>
+              </table>
+
+              <br><br>
+              <h2>2. Address</h2>
+
+              <table>
+                  <tr>
+                      <td>
+                          <input type="text" name="homeNo" id="homeNo" placeholder="H.No" />
+                      </td>
+                      <td>
+                          <input type="text" name="street" id="street" placeholder="Street" />
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <input type="text" name="area" id="area" placeholder="Area" />
+                      </td>
+                      <td>
+
+                      </td>
+                  </tr>
+              </table>
+
+              <br>
+              <h4>District</h4>
+              <br>
+              <select name="district" id="district">
+                  <option>Choose</option>
+                  <option value="Palakkad">Madurai</option>
+                  <option value="Kannur">Virudhunagar</option>
+                  <option value="Malappuram">Chennai</option>
+                  <option value="Vayanad">Coimbatore</option>
+              </select>
+              <br><br><br>
+
+              <h2>3. Choose the Test Type</h2>
+              <br>
+              <p>(Check atleast one box without fail)</p>
+              <br>
+              <table>
+                  <tr>
+                      <td>
+                          <input type="checkbox" name="cbc" id="cbc" value="cbc">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; CBC
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <input type="checkbox" name="urine" id="urine" value="urine">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; Complete Urine
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <input type="checkbox" name="lipid" id="lipid" value="lipid">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; Lipid Profile
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <input type="checkbox" name="tsh" id="tsh" value="tsh">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; Thyroid Stimulating Hormone(TSH)
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <input type="checkbox" name="glucose" id="glucose" value="glucose">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; Glucose Test
+                      </td>
+                  </tr>
+              </table>
+
+              <br><br>
+              <h2>4. Do you want a hard copy of the report also?</h2>
+              <br>
+              <table>
+                  <tr>
+                      <td>
+                          <input type="radio" name="yes/no" />
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; Yes
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="yes/no">
+                      </td>
+                      <td>
+                          &nbsp;&nbsp;&nbsp;&nbsp; No
+                      </td>
+                  </tr>
+              </table>
+              <br><br>
+
+              <h2>5. Select Your Comfortable Date and Time
+              </h2><br>
+              <input type="date" name="date" id="date"><br>
+              <input type="time" name="time" id="time">
+              <br><br><br>
+
+          </form>
+      </div>
+
+      <div class="box-right">
+          <img src="images/lab-test.jpg">
+      </div>
+
+  </div>
+  <br>
+
+  <div id="buttons">
+      <input type="reset" name="reset" id="reset">
+      <input type="submit" name="submit" id="submit">
+  </div>
+
+</body>
+
+</html>
